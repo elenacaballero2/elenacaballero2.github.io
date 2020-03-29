@@ -51,19 +51,24 @@
 			<p><a href="projects.html">Projects</a></p>
 			<p><a href="contact.html">Contact Me</a></p>
 			<p><a href="testimonials.html">Testimonials</a></p>
+			<div class="clear-float"></div>
 		</nav>
 	
 
 		<section>
 			<article id="about-me" class="border">
 				<h2><em>About Me</em></h2>
-				<img src="images/portrait.jpeg" alt="user icon" width="400px">
+				<img src="images/portrait.jpeg" alt="user icon" width="400px" style="float:left;">
 					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+					<!-- this turns off the float property so that everything after the img element and the article element, does not float to the left -->
+					<!-- this div is empty: using an empty div block is a common trick for applying a specific style to a specific point in a page -->
+					<div class="clear-float"></div>
 			</article>
 
 			<article id="experiences">
 				<h2><em>Past Experiences</em></h2>
 				<img src="images/balloon.jpeg" alt="hot air balloon" width="400px">
+			<div class="right-content">
 				<table>
 					<caption>Employment History</caption>
 					<thead>
@@ -92,15 +97,17 @@
 						</tr>
 					</tbody>
 					</table>
+				</div>
 
 					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <span style="background-color: lightblue; border: thin solid darkblue;">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+					<div class="clear-float"></div>
 
 			</article>
 
 			<article id="hobbies">
 				<h2><em>Hobbies</em></h2>
 				<img src="images/person.jpeg" alt="a woman playing guitar and singing" width="400px">
-
+				<div class="right-content">
 					<ul>
 						<li>Hobbies</li>
 					</ul>
@@ -128,8 +135,10 @@
 							<li>Denmark</li>
 							<li>Cuba</li>
 						</ul>
+					</div>
 
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <strong>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</strong> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+					
+					<div class="clear-float"></div>
 			</article>
 		</section>
 

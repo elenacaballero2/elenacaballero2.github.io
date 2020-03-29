@@ -9,6 +9,8 @@ body{
 	background-color: #f7f7f7;
 	font-family: avenir, helvetica, sans-serif;
 	color: #0d1f2d;
+	max-width: 900px;
+	margin: 0 auto;
 }
 
 header, footer{
@@ -30,6 +32,47 @@ nav{
 	border-bottom: 3px dashed #B4B8C5;
 	/* adds whitespace*/
 	margin-top: 4px;
+}
+nav a{
+	background-color: #B4B8C5;
+	color: #fef9ff;
+	padding: 8px;
+	border: thin solid #0d1f2d;
+	text-decoration: none;
+	text-align: center;
+	/*in order to add margin to an inline element you have to display the 
+	inline element as a block element so we use display: block*/
+	display: block;
+	margin: 20px;
+	width: 100px;
+	/*the first block will align against the left margin of the page and
+	 subsequent blocks will stack horizontally to the right of the first block*/
+	float:left; 
+
+}
+nav a:visited{
+	color: /*#e4c3ad*/;
+}
+nav a:hover{
+	background-color: #E9EBF8;
+	color: #A5A299;
+}
+nav a:active{
+	font-weight: bold;
+}
+
+.right-content{
+	float:left;
+}
+.clear-float{
+	clear:both;
+}
+/*this applies to the images inside the article element only*/
+article img{
+	float: left;
+}
+article{
+	margin-bottom: 20px;
 }
 
 /*fixing the form on the contact page*/
