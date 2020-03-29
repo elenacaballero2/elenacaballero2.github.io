@@ -7,23 +7,55 @@
 <html lang="en">
 	<head>
 		<title>Elena's Portfolio</title>
+		<link href="stylesheet/main.css" rel="stylesheet" type="text/css" />
+		<style>
+			caption{
+					font-weight: bold;
+					font-size: 1.2em;
+					margin-bottom: 8px;
+				}
+				table,th,td {
+					border: 1px solid #0d1f2d;
+					/*this collapses the double borders surrounding the cells of the table*/
+					border-collapse: collapse;
+					padding: 5px 10px;
+				}
+				table{
+					/*this makes the table 90% width of the parent element (in this case it would be the article element)*/
+					width: 90%;
+					/*this centers the table horizontally on the page*/
+					margin: auto;
+				}
+				tr{
+					height: 30px;
+				}
+				th{
+					background-color: #A5A299;
+					color: #f2eded;
+				}
+				/*this alternates the rows */
+				tr:nth-child(odd){
+					background-color: #E9EBF8;
+				}
+			
+			}
+		</style>
 	</head>
 	<body>
 		<header>
 			<h1>Portfolio for Elena Caballero</h1>
-			<hr>
 		</header>
 			<!-- I need to add links to projects.html, etc -->
-		<nav>
+		<nav class="border">
 			<p><a href="">Home</a></p>
 			<p><a href="projects.html">Projects</a></p>
 			<p><a href="contact.html">Contact Me</a></p>
 			<p><a href="testimonials.html">Testimonials</a></p>
 		</nav>
-		<hr>
+	
 
 		<section>
-			<article id="about-me">
+			<article id="about-me" class="border">
 				<h2><em>About Me</em></h2>
 				<img src="images/portrait.jpeg" alt="user icon" width="400px">
 					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
@@ -33,12 +65,16 @@
 				<h2><em>Past Experiences</em></h2>
 				<img src="images/balloon.jpeg" alt="hot air balloon" width="400px">
 				<table>
-						<caption>Employment History</caption>
+					<caption>Employment History</caption>
+					<thead>
 						<tr>
 							<th>Years of Employment</th>
 							<th>Title</th>
 							<th>Company</th>
 						</tr>
+					</thead>
+					<tbody>
+
 						<tr>
 							<td>2017-2019</td>
 							<td>Specialist</td>
@@ -54,7 +90,9 @@
 							<td>Manager of Concessions</td>
 							<td>The Puertorican Travelling Theater</td>
 						</tr>
+					</tbody>
 					</table>
+
 					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <span style="background-color: lightblue; border: thin solid darkblue;">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 
 			</article>
@@ -97,7 +135,7 @@
 
 		<!-- add a footer and the (&copy;) is the code character for the copyright symbol -->
 		<footer>
-			<hr>
+			
 			<p> &copy; 2020 Elena Caballero. All rights reserved.</p>
 		</footer>
 

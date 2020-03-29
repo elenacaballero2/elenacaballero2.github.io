@@ -1,0 +1,90 @@
+/*
+creator: Elena Caballero;
+Date Created: 3/29/20;
+Last modified:;
+*/
+
+
+body{
+	background-color: #f7f7f7;
+	font-family: avenir, helvetica, sans-serif;
+	color: #0d1f2d;
+}
+
+header, footer{
+	background-color: #E9EBF8;
+	color: #8D818C;
+	height: 100px;
+	/*makes the h1 center*/
+	text-align: center;
+	padding: 30px 10px 20px 10px;
+}
+h1{
+	/*makes the font size about 2 and a half times bigger than the default (1em)*/
+	font-size: 2.5em;
+}
+
+nav{
+	/*this adds borders to the nav*/
+	border-top: 3px dashed #B4B8C5;
+	border-bottom: 3px dashed #B4B8C5;
+	/* adds whitespace*/
+	margin-top: 4px;
+}
+
+/*fixing the form on the contact page*/
+
+label, fieldset{
+	font-size: 1.1em;
+}
+input[type=text]{
+	border: 2px solid #0d1f2d;
+	width: 50%;
+	padding: 8px 8px;
+	margin: 12px 0;
+	box-sizing: border-box;
+	font-size: 1.1em;
+}
+
+fieldset{
+	background-color: #E9EBF8;
+	width: 100%;
+	padding: 12px 20px;
+	margin: 12px 0;
+	box-sizing: border-box;
+}
+select, textarea{
+	margin: 12px 0;
+	font-size: 1em;
+}
+
+input[type=submit]{
+	font-size: 1.2em;
+	background-color: #B4B8C5;
+	color: ##fef9ff;
+	padding: 4px 8px;
+}
+
+input[type=submit]:hover{
+	background-color: #8D818C;
+    color: #FEFFFE;
+}
+
+textarea{
+	width: 100%;
+	height: 200px;
+	padding: 12px 20px;
+	margin: 12px 0;
+	box-sizing: border-box;
+	border: 2px solid #0d1f2d;
+	border-radius: 3px;
+	background-color: #fff;
+	resize: none;
+}
+
+
+
+
+
+
+
