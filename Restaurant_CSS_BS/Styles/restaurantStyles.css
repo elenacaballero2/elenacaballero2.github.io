@@ -1,0 +1,119 @@
+body{
+	font-family: 'Raleway', sans-serif, helvetica;
+	color: #192208;
+	background-color: #FFF2D6;
+}
+
+h1{
+	font-weight: 100;
+	font-size: 2.5em; 
+}
+h2{
+	font-weight: 400;
+}
+h3{
+	font-weight: 400;
+}
+header,footer,{
+	background-color: #AF3F1A;
+	color: #8D818C;
+	height: 100px;
+	/*makes the h1 center*/
+	text-align: center;
+	padding: 30px 10px 20px 10px;
+}
+.jumbotron{
+	background-color: #AF3F1A;
+	text-align: center;
+	color: #f0f2f5;
+}
+
+nav{
+	border-top: thin #AF3F1A solid;
+	border-bottom: thin #AF3F1A solid;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	margin-top: 4px;
+}
+nav a{
+	background-color: #B4B8C5;
+	color: #f0f2f5;
+	padding: 8px;
+	border: thin solid #0d1f2d;
+	text-decoration: none;
+	text-align: center;
+	/*in order to add margin to an inline element you have to display the 
+	inline element as a block element so we use display: block*/
+	display: block;
+	margin: 20px;
+	width: 100px;
+	/*the first block will align against the left margin of the page and
+	 subsequent blocks will stack horizontally to the right of the first block*/
+	/*float:left; */
+}
+a{
+	text-decoration: underline;
+	color:#AF3F1A;
+}
+
+a:visited{
+	color:blue;
+}
+
+a:hover{
+	font-weight: bold;
+	
+}
+a:active{
+	
+	text-decoration: none;
+}
+		
+	nav .btn{
+	background-color: #AF3F1A;
+	color: #f0f2f5;
+		}
+
+	nav .btn:hover{
+		font-weight: bold;
+		}
+
+	.row{
+		background-color: #DCE4B4;
+		padding: 20px;
+		margin: 20px;
+		margin-bottom: 80px;
+	}
+
+div.col-lg-3.col-12 {
+	/*padding: 20px;*/
+	margin: 20px;
+
+}
+.menu_header{
+	font-size: 1.4em;
+	font-weight: 400;
+
+}
+
+.col-lg-3.col-12 img{
+	margin-top: 20px;
+}
+.table{
+	tr:nth-child(odd){
+		background-color: #DCE4B4; 
+	};
+}
+.table-striped {
+	background-color: #DCE4B4; 
+}
+.table-responsive{
+	margin-bottom: 100px;
+}
+.review{
+	margin-bottom: 50px;
+}
+
+
+
+
