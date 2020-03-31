@@ -37,16 +37,18 @@
 			}
 
 			input[type=submit]{
-				font-size: 1.2em;
+				font-size: 1em;
 				background-color: #B4B8C5;
 				color: ##fef9ff;
 				padding: 4px 8px;
+				border:none;
 			}
 
 			input[type=submit]:hover{
 				background-color: #DCE4B4;
 			    color: #FEFFFE;
 			    font-weight: bold;
+			    border: none;
 			}
 
 			textarea{
@@ -71,24 +73,26 @@
 		</header>
 		
 		<br>
-		<nav>
+		<nav style="text-align: center;">
 			<a class="btn" href="restaurant2.html">Home</a>
 			<a class="btn" href="menu2.html">Menu</a>
-			<a class="btn" href="contact.html">Contact Us</a>
+			<a class="btn" href="contact.html">Contact</a>
 		</nav>
 	
 		<br>
 		<h2 style="font-weight: 400; text-align: center; font-size: 2em;">Contact Us</h2>
 
+<div class="form">
+
 <form action="" method="POST">
 	<fieldset>
 			<label for="Name">Name:</label><br>
-			<input type="text" id="Name" name="Name"><br
+			<input type="text" id="Name" name="Name"><br>
 
 			<label for="email">Email:</label><br>
 			<input type="text" id="Email" name="email"><br>
 
-			<label for="phone">Phone:</label>
+			<label for="phone">Phone:</label><br>
 			<input type="text" id="phone" name="phone"><br>
 	</fieldset>
 	<br>
@@ -114,7 +118,7 @@
 				<fieldset>
 					<legend>Best days to contact you: </legend><br>
 						<input type="checkbox" id="monday" name="monday" value="monday">
-						<label for="monday">M</label><br>
+						<label for="monday">M</label>
 
 						<input type="checkbox" id="tuesday" name="tuesday" value="tuesday">
 						<label for="tuesday">T</label>
@@ -136,7 +140,7 @@
 
 				<input type="submit" name="submit" value="submit">
 	</form>
-
+</div>
 
 
 
