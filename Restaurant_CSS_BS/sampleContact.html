@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>sample Contact</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <script type="">
+    (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function(form) {
+        form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+            event.preventDefault();
+            event.stopPropagation();
+        }
+            form.classList.add('was-validated');
+        }, false);
+        });
+        }, false);
+      })();
+
+  </script>
+  <style>
+      label, fieldset{
+        font-size: 1.1em;
+        font-weight: 700;
+
+      }
+
+      input[type=text]{
+        border: 2px solid #0d1f2d;
+        width: 50%;
+        padding: 8px 8px;
+        margin: 12px 0;
+        box-sizing: border-box;
+        font-size: 1.1em;
+        font-weight: bold;
+      }
+
+      fieldset{
+        background-color: #DCE4B4;
+        width: 100%;
+        padding: 12px 20px;
+        margin: 12px 0;
+        box-sizing: border-box;
+      }
+      select, textarea{
+        margin: 12px 0;
+        font-size: 1em;
+      }
+
+      textarea{
+        width: 100%;
+        height: 200px;
+        padding: 12px 20px;
+        margin: 12px 0;
+        box-sizing: border-box;
+        border: 2px solid #0d1f2d;
+        border-radius: 3px;
+        background-color: #fff;
+        resize: none;
+      }
+      form.needs-validation{
+        max-width: 60%;
+        margin: 0 auto;
+        /*padding: 50px;*/
+        padding-bottom: 100px;
+      }
+
+
+</style>
+</head>
+<body>
+  <nav style="text-align: center">
+      <a class="btn badge-pill" href="restaurant2.html"><svg class="bi bi-house-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 3.293l6 6V13.5a1.5 1.5 0 01-1.5 1.5h-9A1.5 1.5 0 012 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5z" clip-rule="evenodd"/><path fill-rule="evenodd" d="M7.293 1.5a1 1 0 011.414 0l6.647 6.646a.5.5 0 01-.708.708L8 2.207 1.354 8.854a.5.5 0 11-.708-.708L7.293 1.5z" clip-rule="evenodd"/></svg></a>
+      <a class="btn badge-pill" href="menu2.html">Menu</a>
+      <a class="btn badge-pill" href="contact.html">Contact</a>
+    </nav>
+  
+
+<div class="container">
+
+    <form class="needs-validation" novalidate>
+          <div>
+              <div class="form-group">
+                  <label for="validationCustom012">First name</label>
+                  <input type="text" class="form-control" id="validationCustom012" placeholder="First name" value=""
+                    required>
+                  <div class="valid-feedback">
+                     Looks good!
+                  </div>
+              </div>
+
+              <div class="form-group">
+                  <label for="validationCustom022">Last name</label>
+                  <input type="text" class="form-control" id="validationCustom022" placeholder="Last Name" value="" required>
+                  <div class="valid-feedback">
+                      Looks good!
+                  </div>
+              </div>
+
+              <div class="form-group">
+                  <label for="validationCustomUsername2">Email</label>
+                  <input type="text" class="form-control" id="validationCustomUsername2" aria-describedby="inputGroupPrepend2"
+                    required>
+                  <div class="invalid-feedback">
+                      Please provide a valid email.
+                 <!-- closing .invalid-feedback div -->
+                  </div>
+                  <!-- closing div .col-md-4 -->
+              </div>
+              <!-- closing .form-row -->
+          </div>
+
+      <div>
+
+        <div class="form-group">
+          <label for="inquiry">Reason for Inquiry:</label><br>
+            <select id="inquiry" name="inquiry">
+              <option value="default" selected="Catering"></option>
+              <option value="party">Private Party</option>
+              <option value="feedback">Feedback</option>
+              <option value="other">Other</option><br>
+            </select>
+        </div>
+      </div>
+    <div>
+        <div class="form-group">
+          <fieldset>
+              <legend>Have you been to the restaurant?</legend><br>
+              <input type="radio" id="choice1" name="questionnaire" value="yes">
+              <label for="choice1">Yes</label><br>
+              <input type="radio" id="choice2" name="questionnaire" value="no">
+              <label for="choice2">No</label><br>
+            </fieldset>
+        </div>
+
+        <div class="form-group">
+          <fieldset>
+              <legend>Best days to contact you: </legend><br>
+                <input type="checkbox" id="monday" name="monday" value="monday">
+                <label for="monday">M</label>
+
+                <input type="checkbox" id="tuesday" name="tuesday" value="tuesday">
+                <label for="tuesday">T</label>
+
+                <input type="checkbox" id="wed" name="wed" value="wed">
+                <label for="wed">W</label>
+
+                <input type="checkbox" id=thurd name="thurs" value="thurs">
+                <label for="thurs">Th</label>
+
+                <input type="checkbox" id=fri name="fri" value="fri">
+                <label for="fri">F</label>
+            </fieldset>
+        </div>
+      </div>
+
+        <div class="form-group">
+          <label for="info">Additonal Information</label><br>
+            <textarea id="info" name="info"></textarea>
+            <br>
+        </div>
+
+          <button class="btn btn-primary btn-sm btn-rounded" type="submit">Submit form</button>
+    </form>
+    <!-- closing div .container -->
+</div>
+
+</body>
+</html>
