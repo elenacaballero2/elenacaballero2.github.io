@@ -13,7 +13,11 @@ body{
 	margin: 0 auto;
 }
 
-header, footer{
+.jumbotron{
+background-color: #E9EBF8;
+	color: #8D818C;
+	} 
+footer{
 	background-color: #E9EBF8;
 	color: #8D818C;
 	height: 100px;

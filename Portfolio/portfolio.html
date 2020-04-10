@@ -8,7 +8,9 @@
 	<head>
 		<title>Elena's Portfolio</title>
 		<link href="stylesheet/main.css" rel="stylesheet" type="text/css" />
-		<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="stylesheet/main.css">
+
 		
 		<style>
 			caption{
@@ -45,32 +47,85 @@
 	</head>
 
 	<body>
-		<header>
-			<h1>Portfolio for Elena Caballero</h1>
-		</header>
-			<!-- I need to add links to projects.html, etc -->
-		<nav class="border">
-			<p><a href="">Home</a></p>
-			<p><a href="projects.html">Projects</a></p>
-			<p><a href="contact.html">Contact Me</a></p>
-			<p><a href="testimonials.html">Testimonials</a></p>
-			<div class="clear-float"></div>
-		</nav>
+	<div class="container">
+	<header class="jumbotron">
+		<h1>Elena Caballero</h1>
+		<h2 class="font-italic">Web Developer Extraordinaire</h2>
+		<h3 class="text-right mt-5">Solving Web Dev problems every day!</h3>
+
+	</header>
+	
+	 <nav>
+		<a class="btn badge-pill" href="contact.html">Contact Me</a>
+		<a class="btn badge-pill" href="projects.html">Projects</a>
+		<div class="clear-float">
+	</nav>
+
 	
 
 		<section>
-				<article id="about-me" class="border">
-					<h2><em>About Me</em></h2>
+			<div class="row">
+				<div class="col-lg-3 col-md-4">
+					<!-- div for picture -->
+					<!-- the img-fluid class makes the image responsive -->
+					<img src="images/guitar.jpg" alt="guitar" class="img-fluid">
+				</div>
+				<div class="col-lg-9 col-md-8">
+						<!-- div for text -->
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-						<img src="images/portrait.jpeg" alt="user icon" width="400px" style="float:left; padding-right: 40px;">
-						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-						<!-- this turns off the float property so that everything after the img element and the article element, does not float to the left -->
-						<!-- this div is empty: using an empty div block is a common trick for applying a specific style to a specific point in a page -->
-						<div class="clear-float"></div>
-				
-			
-				</article>
+				</div>
+
 			</div>
+
+		<div class="row">
+	        <div class="col-lg-3 col-md">
+	            <!-- div for picture -->
+	            <img src="images/smile-2072907_640.jpg" alt="Photo of  Marci Kitzmiller" class="img-fluid" />
+	        </div>
+
+	        <div class="col-lg-9 col-md">
+	            <!-- div for text -->
+	            <p>Pellentesque finibus vehicula scelerisque. Morbi eget quam aliquet, vehicula felis vitae, semper odio. Curabitur turpis lectus, ultricies vel nisi vulputate, porta congue sapien. Proin facilisis ipsum at lorem scelerisque tincidunt.</p>
+	            <p>Proin convallis orci at venenatis euismod. In rhoncus ligula non nibh pellentesque rutrum. Nunc vel mauris diam.</p>
+	        </div>
+	    </div> <!-- End of .row div -->
+
+		<div class="accordion" id="accordionExample">
+	      <div class="card">
+	        <div class="card-header" id="portfolio01">
+	          <h5 class="mb-0">
+	            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+	              My First Portfolio Piece
+	            </button>
+	          </h5>
+
+	          <h5 class="mb-0">
+	            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseTwo">
+	              My Second Piece
+	            </button>
+	          </h5>
+	        </div> <!-- end of .card div -->
+
+	        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+	          <div class="card-body">
+	            <p><a href="" target="_blank">Taco Tuesday</a></p>
+	            <figure><img src="images/web.png"  alt="Screenshot of home page" style="width: 500px"></figure>
+	          </div> <!-- end of .card-body div -->
+	        </div> <!-- end of #collapsOne div -->
+
+	         <div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+	          <div class="card-body">
+	            <p><a href="" target="_blank">Taco Tuesday</a></p>
+	            <figure><img src="images/web.png"  alt="Screenshot of home page" style="width: 500px"></figure>
+	          </div> <!-- end of .card-body div -->
+	        </div> <!-- end of #collapsOne div -->
+
+
+	      </div> <!-- end of .card div --> 
+		</div> <!-- end of .accordian div -->
+
+
 
 			<article id="experiences">
 				<h2><em>Past Experiences</em></h2>
@@ -154,11 +209,12 @@
 			
 			<p> &copy; 2020 Elena Caballero. All rights reserved.</p>
 		</footer>
+	</div>
 
-<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
- -->	</body>
+</body>
 </html>
