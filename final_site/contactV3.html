@@ -83,6 +83,23 @@
 		        });
 		        }, false);
       })();
+      
+      function clear() {
+		    document.getElementById('validationCustom012').value = "";
+		    document.getElementById('validationCustom022').value = "";
+		    document.getElementById('validationCustomUsername2').value = "";
+		    document.getElementById('inquiry').value = "catering";
+		    document.getElementById('info').value = "";
+		    document.getElementById("choice1").checked = true;
+		    document.getElementById("choice2").checked = false;
+		    document.getElementById("monday").checked = false;
+		    document.getElementById("tuesday").checked = false;
+		    document.getElementById("wed").checked = false;
+		    document.getElementById("thurd").checked = false;
+		    document.getElementById("fri").checked = false;
+		 }
+
+
 
   </script>
 		
@@ -189,6 +206,7 @@
         </div>
 
           <button class="btn btn-primary btn-sm btn-rounded" type="submit">Submit form</button>
+          <button type="reset" class="btn btn-primary btn-sm btn-rounded" onclick="resetVal();">Reset</button>
     </form>
     <!-- closing div .container -->
 </div>
